@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header {
+  background-color: #bdc021;
+  color: #eb7508;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #bdc021;
+  color: #eb7508;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #08eeee;
+}
+
+.aside {
+  background-color: #006386;
+  padding: 15px;
+  color: #f00606;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #bdc021;
+  color: #eb7508;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>DragonBall Z</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+        <li><a href="index.html">Main Page</a></li>
+      <li><a href="Day 3-Plot.html">The Plot</a></li>
+      <li>Characters</li>
+    
+    </ul>
+  </div>
+
+  <div class="col-6 col-s-9">
+    <h1>Characters</h1>
+    <p>Some of the main characters include 
+    <br>
+    <br>
+        <img src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2020%2F10%2Fjoan-roman-change-name-dragon-ball-goku-news-tw.jpg?w=960&cbr=1&q=90&fit=max" width="300" height="130" title="Goku">
+        <p>Goku, a strong low class saiyan warrior who got cast out of his planet in it's final minutes alive. Now known as one of the strongest fighters in the universe as he defeats all of his enemies fairly easily, and is desperate for a nice fight.</p>
+<br>
+<img src="https://www.pngitem.com/pimgs/m/524-5245159_dragon-ball-vegeta-saiyan-saga-hd-png-download.png" width="200" height="200" title="Vegeta">
+<br>
+<br>
+<p>Vegeta, gokus main rival and more of an anti hero up until the few final chapters. almost equal to goku in power normally, and the prince of the now destroyed "planet vegeta", home of the saiyans.</p>  
+<br>
+<img src="https://dragonball.guru/wp-content/uploads/2021/03/krillin-profile-1.png" width="200" height="200" title="Krillin">
+<br>
+<br>
+<p>Krillin, Gokus best human friend since childhood, and pretty weak compared to most other people in the show, although much stronger than an average human, with super-human like strength and speed. He gave up martial arts to become a cop and use his ability to help people regularly.</p>
+<br>
+<img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3817246c-a947-491c-ae2e-f214715c93cb/dbkg67j-899e14f4-ba6e-4442-a616-47d0f3894bdf.png/v1/fill/w_1280,h_2783,strp/piccolo__2_by_urielalv_dbkg67j-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9Mjc4MyIsInBhdGgiOiJcL2ZcLzM4MTcyNDZjLWE5NDctNDkxYy1hZTJlLWYyMTQ3MTVjOTNjYlwvZGJrZzY3ai04OTllMTRmNC1iYTZlLTQ0NDItYTYxNi00N2QwZjM4OTRiZGYucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.r4YJmxce6d9nkbMvOLINweYMJMCX_DG231WAUG_AyFk" width="200" height="300" title="Piccolo">
+<br>
+<br>
+<p> Piccolo, an old enemy of gokus turned friend and battle partner after goku kills his father as a kid and himself as a teenager. Piccolo is also an alien, known as a "namekian" and later on turns into earths guardian for a while. Not the strongest fighter but he is not someone to be taken lightly.</p>
+</div>
+
+  <div class="col-3 col-s-12">
+    <div class="aside">
+      <h2>Who is the strongest among these four characters?</h2>
+      <p>Goku is the strongest, with vegeta being a very close second as per some of the newer manga chapters.</p>
+      <h2>Who has died the most?</h2>
+      <p>Goku died the most, dying about 5 times and being wished back. Everyone else has a tie at 4 deaths.</p>
+      <h2>How did they come back to life?</h2>
+      <p>They used these powerful wish granting orbs called the "dragon balls", and they can grant you only 1 wish per use, and you can't wish for the same thing twice. This ability gets later upgraded to 3 wishes and you can wish for one thing as many times as you want. But if the earths guardian dies, they turn to stone and no longer work.</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>This entire website was based off of the anime DragonBall Z, and i own none of the information given.            Bird Studio/Shueisha ©</p>
+</div>
+
+</body>
+</html>
